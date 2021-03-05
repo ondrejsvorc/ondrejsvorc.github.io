@@ -181,7 +181,7 @@ section h1 {
   background-size: 80%;
 }
 
-@media all and (min-width: 769px) {
+/* @media all and (min-width: 769px) {
   .aboutMe .layout .pic {
     width: 150rem;
     height: 40rem;
@@ -200,15 +200,15 @@ section h1 {
     align-items: center;
     justify-content: center;
   }
-}
+} */
 
-/* .aboutMe .layout .skills {
+.aboutMe .layout .skills {
   position: relative;
   padding-top: 15rem;
   display: flex;
   align-items: center;
   justify-content: center;
-} */
+}
 
 .aboutMe .layout .skills > img {
   width: 22.5rem;
