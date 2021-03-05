@@ -181,13 +181,34 @@ section h1 {
   background-size: 80%;
 }
 
-.aboutMe .layout .skills {
+@media all and (min-width: 769px) {
+  .aboutMe .layout .pic {
+    width: 150rem;
+    height: 40rem;
+    border: 2px solid rgb(37, 31, 31);
+    border-radius: 5rem;
+    margin-left: 8rem;
+    text-align: center;
+    background: url("/resources/about_me.png") no-repeat center;
+    background-size: 80%;
+  }
+
+  .aboutMe .layout .skills {
+    position: relative;
+    display: flex;
+    padding-top: 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* .aboutMe .layout .skills {
   position: relative;
   padding-top: 15rem;
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */
 
 .aboutMe .layout .skills > img {
   width: 22.5rem;
