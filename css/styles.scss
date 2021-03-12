@@ -1,0 +1,496 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat");
+
+$primaryColor: #66fcf1;
+$primaryColorDarker: #45a29f;
+
+$black: #0b0c10;
+$blackOpacity: rgba(11, 12, 16, 0.8);
+$white: #fff;
+$grey: #202833;
+
+$sizeTitle: 4em;
+$sizeButton: 0.8em;
+$sizeMenu: 1em;
+
+body {
+  background: $black;
+  font-size: 20px;
+  font-family: "Montserrat";
+}
+
+section {
+  padding: 80px 0; /* x, y (80px zhora, 80px zdola)*/
+  min-height: 100vh;
+  color: #fff;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+h1 {
+  color: $primaryColor;
+  font-size: $sizeTitle;
+  margin: 0 0 1rem;
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-bottom: 0.5px solid $primaryColorDarker;
+  height: 3em;
+
+  .navbar-nav {
+    display: flex;
+    column-gap: 1rem;
+  }
+
+  .navbar-brand {
+    display: flex;
+    column-gap: 1rem;
+  }
+
+  a {
+    font-size: $sizeMenu;
+    color: $white !important; /* větší priorita před bootstrapem */
+  }
+
+  @media (min-width: 992px) {
+    .collapse {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}
+
+#introduction {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: url(/images/Backgrounds/start_page.jpg);
+  background-size: cover;
+
+  .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+      position: relative;
+      margin: 0 0 2rem;
+
+      span {
+        position: absolute;
+        content: "";
+        bottom: -1rem;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(
+          90deg,
+          rgba(0, 0, 0, 0) 0%,
+          rgba(69, 162, 159, 1) 40%,
+          rgba(69, 162, 159, 1) 60%,
+          rgba(0, 0, 0, 0) 100%
+        );
+      }
+    }
+
+    p {
+      color: $white;
+    }
+  }
+
+  .scroll-to-next {
+    position: absolute;
+    bottom: 2em;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 3px solid $primaryColor;
+    border-radius: 100%;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease background;
+
+    a {
+      text-decoration: none;
+    }
+
+    i {
+      width: 30px;
+      height: 30px;
+      font-size: 1.5em;
+      color: $primaryColor;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: 0.3s ease color;
+    }
+
+    &:hover {
+      background-color: $primaryColor;
+
+      i {
+        color: $black;
+      }
+    }
+
+    &::before,
+    &::after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      content: "";
+      border: 1px solid $primaryColor;
+      opacity: 1;
+      border-radius: 100%;
+      animation: pulsing 2s forwards infinite;
+      transition: scale(1.01);
+      pointer-events: none;
+    }
+
+    &::after {
+      animation-delay: 0.5s;
+    }
+  }
+}
+
+#about-me {
+  background: url(/images/Backgrounds/about_me.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .area-header {
+    width: 100%;
+    height: 5em;
+    text-align: center;
+    margin-bottom: 2em;
+  }
+
+  .area {
+    padding: 0;
+    height: 30em;
+    border-radius: 0.5em 0.5em 0 0;
+    background-color: rgba(0, 0, 0, 0.6);
+
+    .area-image {
+      width: 40%;
+      height: 100%;
+      border-radius: 0.5em 0 0 0;
+      background-color: $primaryColorDarker;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: center;
+
+      img {
+        width: 25%;
+        height: 25%;
+      }
+    }
+  }
+}
+
+#projects {
+  background: url(/images/Backgrounds/projects.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+
+  .project {
+    position: relative;
+    width: 20em;
+    height: 25em;
+    background-color: $black;
+    border-radius: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1em 0;
+    transition: 0.25s ease-out transform;
+
+    &:hover {
+      transform: scale(1.025);
+    }
+
+    .project1 {
+      width: 100%;
+      height: 100%;
+
+      .project-image {
+        width: 100%;
+        height: 10em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-top-left-radius: 0.5em;
+        border-top-right-radius: 0.5em;
+        background: url(/images/Applications/cataloguing_helper.png) no-repeat
+          center;
+        background-size: cover;
+      }
+
+      .project-header {
+        position: relative;
+        width: 100%;
+        height: 2em;
+        display: flex;
+        justify-content: center;
+        margin-top: 2em;
+
+        h2 {
+          color: $primaryColor;
+        }
+      }
+
+      .project-info {
+        position: relative;
+        width: 100%;
+        height: 7em;
+        padding: 2em;
+        font-size: 0.8em;
+        text-align: center;
+      }
+
+      .project-buttons {
+        width: 100%;
+        height: 3em;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        .project-button {
+          background: none;
+          color: $primaryColor;
+          border-radius: 0.5em;
+          border: 1px $primaryColorDarker solid;
+          outline: none;
+          transition: 0.25s ease-out all;
+          padding: 0.5em;
+
+          &:hover {
+            background-color: $primaryColorDarker;
+            color: $white;
+          }
+        }
+      }
+    }
+
+    .project2 {
+      width: 100%;
+      height: 100%;
+
+      .project-image {
+        width: 100%;
+        height: 10em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-top-left-radius: 0.5em;
+        border-top-right-radius: 0.5em;
+        background: url(/images/Applications/backmeup.png) no-repeat center;
+        background-size: cover;
+      }
+
+      .project-header {
+        position: relative;
+        width: 100%;
+        height: 2em;
+        display: flex;
+        justify-content: center;
+        margin-top: 2em;
+
+        h2 {
+          color: $primaryColor;
+        }
+      }
+
+      .project-info {
+        position: relative;
+        width: 100%;
+        height: 7em;
+        padding: 2em;
+        font-size: 0.8em;
+        text-align: center;
+      }
+
+      .project-buttons {
+        width: 100%;
+        height: 3em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-evenly;
+
+        .project-button {
+          background: none;
+          color: $primaryColor;
+          border-radius: 0.5em;
+          border: 1px $primaryColorDarker solid;
+          outline: none;
+          transition: 0.25s ease-out all;
+          padding: 0.5em;
+
+          &:hover {
+            background-color: $primaryColorDarker;
+            color: $white;
+          }
+        }
+      }
+    }
+
+    .project3 {
+      width: 100%;
+      height: 100%;
+
+      .project-image {
+        width: 100%;
+        height: 10em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-top-left-radius: 0.5em;
+        border-top-right-radius: 0.5em;
+        background: url(/images/Applications/texted.png) no-repeat center;
+        background-size: cover;
+      }
+
+      .project-header {
+        position: relative;
+        width: 100%;
+        height: 2em;
+        display: flex;
+        justify-content: center;
+        margin-top: 2em;
+
+        h2 {
+          color: $primaryColor;
+        }
+      }
+
+      .project-info {
+        position: relative;
+        width: 100%;
+        height: 7em;
+        padding: 2em;
+        font-size: 0.8em;
+        text-align: center;
+      }
+
+      .project-buttons {
+        width: 100%;
+        height: 3em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-evenly;
+
+        .project-button {
+          background: none;
+          color: $primaryColor;
+          border-radius: 0.5em;
+          border: 1px $primaryColorDarker solid;
+          outline: none;
+          transition: 0.25s ease-out all;
+          padding: 0.5em;
+
+          &:hover {
+            background-color: $primaryColorDarker;
+            color: $white;
+          }
+        }
+      }
+    }
+
+    .project4 {
+      width: 100%;
+      height: 100%;
+
+      .project-image {
+        width: 100%;
+        height: 10em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-top-left-radius: 0.5em;
+        border-top-right-radius: 0.5em;
+        background: url(/images/Applications/turtlewalk.png) no-repeat center;
+        background-size: cover;
+      }
+
+      .project-header {
+        position: relative;
+        width: 100%;
+        height: 2em;
+        display: flex;
+        justify-content: center;
+        margin-top: 2em;
+
+        h2 {
+          color: $primaryColor;
+        }
+      }
+
+      .project-info {
+        position: relative;
+        width: 100%;
+        height: 7em;
+        padding: 2em;
+        font-size: 0.8em;
+        text-align: center;
+      }
+
+      .project-buttons {
+        width: 100%;
+        height: 3em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-evenly;
+
+        .project-button {
+          background: none;
+          color: $primaryColor;
+          border-radius: 0.5em;
+          border: 1px $primaryColorDarker solid;
+          outline: none;
+          padding: 0.5em;
+
+          transition: 0.25s ease-out all;
+
+          &:hover {
+            background-color: $primaryColorDarker;
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes pulsing {
+  0% {
+    transition: scale(1.01);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
