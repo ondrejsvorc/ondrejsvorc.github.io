@@ -8,12 +8,10 @@ window.addEventListener("scroll", function()
     if (scrollY > 0)
     {
         navBar.style.top = -navBarHeight + "px";
-        console.log("true");
     }
     else
     {
         navBar.style.top = 0;
-        console.log("false");
     }
 });
 
