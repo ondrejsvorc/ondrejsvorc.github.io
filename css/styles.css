@@ -81,6 +81,12 @@ h1 {
   font-size: 1em;
   color: #fff !important;
   /* větší priorita před bootstrapem */
+  -webkit-transition: 0.5s ease color;
+  transition: 0.5s ease color;
+}
+
+#navBar .navbar a:hover {
+  color: #66fcf1 !important;
 }
 
 @media (min-width: 992px) {

@@ -76,6 +76,11 @@ h1 {
     a {
       font-size: $sizeMenu;
       color: $white !important; /* větší priorita před bootstrapem */
+      transition: 0.5s ease color;
+
+      &:hover {
+        color: $primaryColor !important;
+      }
     }
 
     @media (min-width: 992px) {
