@@ -1,6 +1,8 @@
 const navBar = document.querySelector("#navBar");
 const navBarHeight = document.querySelector(".banner").clientHeight;
 
+const footerParagraph = document.querySelector("footer p");
+
 window.addEventListener("scroll", function() 
 {
     let scrollY = window.scrollY;
@@ -15,4 +17,4 @@ window.addEventListener("scroll", function()
     }
 });
 
-
+footerParagraph.innerHTML += " " + new Date().getFullYear();
