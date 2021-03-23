@@ -81,11 +81,14 @@ h1 {
   font-size: 1em;
   color: #fff !important;
   /* větší priorita před bootstrapem */
+}
+
+#navBar .navbar a i {
   -webkit-transition: 0.5s ease color;
   transition: 0.5s ease color;
 }
 
-#navBar .navbar a:hover {
+#navBar .navbar a i:hover {
   color: #66fcf1 !important;
 }
 
