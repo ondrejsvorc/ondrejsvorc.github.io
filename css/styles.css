@@ -385,6 +385,7 @@ h1 {
   font-size: 0.8em;
   text-align: center;
   min-height: 70px;
+  padding: 0 0.5em;
 }
 
 #projects .project-wrapper .project .project-buttons {
