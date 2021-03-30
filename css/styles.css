@@ -92,6 +92,10 @@ h1 {
   color: #66fcf1 !important;
 }
 
+#navBar .navbar a:hover {
+  color: #66fcf1 !important;
+}
+
 @media (min-width: 992px) {
   #navBar .navbar .collapse {
     display: -webkit-box;
