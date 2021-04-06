@@ -26,6 +26,10 @@ h1 {
   margin: 0 0 1rem;
 }
 
+a {
+  text-decoration: none;
+}
+
 #navBar {
   position: fixed;
   z-index: 1000;
@@ -83,17 +87,10 @@ h1 {
   /* větší priorita před bootstrapem */
 }
 
-#navBar .navbar a i {
-  -webkit-transition: 0.5s ease color;
-  transition: 0.5s ease color;
-}
-
-#navBar .navbar a i:hover {
-  color: #66fcf1 !important;
-}
-
 #navBar .navbar a:hover {
   color: #66fcf1 !important;
+  -webkit-transition: 0.5s ease color;
+  transition: 0.5s ease color;
 }
 
 @media (min-width: 992px) {

@@ -36,6 +36,10 @@ h1 {
   margin: 0 0 1rem;
 }
 
+a {
+  text-decoration: none;
+}
+
 #navBar {
   position: fixed;
   z-index: 1000;
@@ -77,16 +81,9 @@ h1 {
       font-size: $sizeMenu;
       color: $white !important; /* větší priorita před bootstrapem */
 
-      i {
-        transition: 0.5s ease color;
-      }
-
-      i:hover {
-        color: $primaryColor !important;
-      }
-
       &:hover {
         color: $primaryColor !important;
+        transition: 0.5s ease color;
       }
     }
 
