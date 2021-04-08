@@ -180,7 +180,7 @@ a {
 
 #introduction .scroll-to-next {
   position: absolute;
-  bottom: 3em;
+  bottom: 3.5em;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
