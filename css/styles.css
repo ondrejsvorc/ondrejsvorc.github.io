@@ -145,6 +145,18 @@ a {
   margin: 0 0 2rem;
 }
 
+@media (max-width: 992px) {
+  #introduction .content h1 {
+    font-size: 3em;
+  }
+}
+
+@media (max-width: 772px) {
+  #introduction .content h1 {
+    font-size: 2em;
+  }
+}
+
 #introduction .content h1 span {
   position: absolute;
   content: "";
@@ -158,6 +170,12 @@ a {
 
 #introduction .content p {
   color: #fff;
+}
+
+@media (max-width: 320px) {
+  #introduction .content p {
+    font-size: 0.8em;
+  }
 }
 
 #introduction .scroll-to-next {
@@ -259,11 +277,31 @@ a {
   margin-bottom: 2em;
 }
 
+@media (max-width: 992px) {
+  #about-me .area-header {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 772px) {
+  #about-me .area-header {
+    font-size: 18px;
+  }
+}
+
 #about-me .area {
   padding: 0;
   height: 30em;
   border-radius: 0.5em 0.5em 0 0;
-  background-color: rgba(0, 0, 0, 0.6);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 992px) {
+  #about-me .area {
+    font-size: 13px;
+  }
 }
 
 #about-me .area .area-image {
@@ -283,9 +321,79 @@ a {
       align-content: center;
 }
 
+@media (max-width: 992px) {
+  #about-me .area .area-image {
+    width: 0%;
+  }
+}
+
 #about-me .area .area-image img {
   width: 25%;
   height: 25%;
+}
+
+#about-me .area .area-text {
+  width: 60%;
+  height: 100%;
+  border-radius: 0.5em 0 0 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: justify;
+  row-gap: 2em;
+  padding: 0 2em;
+}
+
+@media (max-width: 992px) {
+  #about-me .area .area-text {
+    width: 100%;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 772px) {
+  #about-me .area .area-text {
+    font-size: 14px;
+  }
+}
+
+#about-me .area .area-text a {
+  color: #66fcf1;
+}
+
+#about-me .area .area-text .area-images {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+#about-me .area .area-text .area-images img {
+  width: 6em;
+  height: 6em;
+}
+
+@media (max-width: 1200px) {
+  #about-me .area .area-text .area-images img {
+    width: 4em;
+    height: 4em;
+  }
 }
 
 #projects {
@@ -311,7 +419,9 @@ a {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 1em;
+  -webkit-column-gap: 1em;
+          column-gap: 1em;
+  row-gap: 2em;
 }
 
 #projects .project-wrapper .project {
@@ -398,7 +508,7 @@ a {
   display: flex;
   -webkit-column-gap: 2rem;
           column-gap: 2rem;
-  padding: 0 0 0.5em 0;
+  padding: 0 0 1em 0;
 }
 
 #projects .project-wrapper .project .project-buttons .project-button {

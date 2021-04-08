@@ -116,6 +116,18 @@ a {
       position: relative;
       margin: 0 0 2rem;
 
+      @media (max-width: 992px) {
+        & {
+          font-size: 3em;
+        }
+      }
+
+      @media (max-width: 772px) {
+        & {
+          font-size: 2em;
+        }
+      }
+
       span {
         position: absolute;
         content: "";
@@ -135,6 +147,12 @@ a {
 
     p {
       color: $white;
+
+      @media (max-width: 320px) {
+        & {
+          font-size: 0.8em;
+        }
+      }
     }
   }
 
@@ -209,13 +227,31 @@ a {
     height: 5em;
     text-align: center;
     margin-bottom: 2em;
+
+    @media (max-width: 992px) {
+      & {
+        font-size: 20px;
+      }
+    }
+
+    @media (max-width: 772px) {
+      & {
+        font-size: 18px;
+      }
+    }
   }
 
   .area {
     padding: 0;
     height: 30em;
     border-radius: 0.5em 0.5em 0 0;
-    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+
+    @media (max-width: 992px) {
+      & {
+        font-size: 13px;
+      }
+    }
 
     .area-image {
       width: 40%;
@@ -227,9 +263,66 @@ a {
       justify-content: center;
       align-content: center;
 
+      @media (max-width: 992px) {
+        & {
+          width: 0%;
+        }
+      }
+
       img {
         width: 25%;
         height: 25%;
+      }
+    }
+
+    .area-text {
+      width: 60%;
+      height: 100%;
+      border-radius: 0.5em 0 0 0;
+      background-color: rgba(0, 0, 0, 0.6);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: center;
+      text-align: justify;
+      row-gap: 2em;
+      padding: 0 2em;
+
+      @media (max-width: 992px) {
+        & {
+          width: 100%;
+          font-size: 18px;
+        }
+      }
+
+      @media (max-width: 772px) {
+        & {
+          font-size: 14px;
+        }
+      }
+
+      a {
+        color: $primaryColor;
+      }
+
+      .area-images {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+
+        img {
+          width: 6em;
+          height: 6em;
+        }
+
+        @media (max-width: 1200px) {
+          img {
+            width: 4em;
+            height: 4em;
+          }
+        }
       }
     }
   }
@@ -246,7 +339,8 @@ a {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 1em;
+    column-gap: 1em;
+    row-gap: 2em;
 
     // @media (max-width: 1050px) {
     //   flex-wrap: wrap;
@@ -306,7 +400,7 @@ a {
       .project-buttons {
         display: flex;
         column-gap: 2rem;
-        padding: 0 0 0.5em 0;
+        padding: 0 0 1em 0;
 
         .project-button {
           background: none;
