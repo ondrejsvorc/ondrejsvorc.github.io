@@ -158,7 +158,7 @@ a {
 
   .scroll-to-next {
     position: absolute;
-    bottom: 2em;
+    bottom: 3em;
     left: 50%;
     transform: translateX(-50%);
     border: 3px solid $primaryColor;
@@ -311,6 +311,7 @@ a {
         display: flex;
         justify-content: center;
         align-content: center;
+        column-gap: 0.5em;
 
         img {
           width: 6em;

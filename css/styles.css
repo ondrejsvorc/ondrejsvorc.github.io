@@ -180,7 +180,7 @@ a {
 
 #introduction .scroll-to-next {
   position: absolute;
-  bottom: 2em;
+  bottom: 3em;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -382,6 +382,8 @@ a {
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
+  -webkit-column-gap: 0.5em;
+          column-gap: 0.5em;
 }
 
 #about-me .area .area-text .area-images img {
