@@ -44,7 +44,7 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  z-index: 999;
+  z-index: 9999;
 }
 
 .loader-container .loader {
@@ -81,6 +81,24 @@ a {
   to {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 
@@ -211,6 +229,8 @@ a {
 #introduction .content h1 {
   position: relative;
   margin: 0 0 2rem;
+  -webkit-animation: 1.5s ease fadeIn;
+          animation: 1.5s ease fadeIn;
 }
 
 @media (max-width: 992px) {
@@ -238,6 +258,8 @@ a {
 
 #introduction .content p {
   color: #fff;
+  -webkit-animation: 2.5s ease fadeIn;
+          animation: 2.5s ease fadeIn;
 }
 
 @media (max-width: 320px) {

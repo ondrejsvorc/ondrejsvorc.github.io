@@ -48,7 +48,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 999;
+  z-index: 9999;
 
   .loader {
     width: 2em;
@@ -72,6 +72,15 @@ a {
 
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 
@@ -161,6 +170,7 @@ a {
     h1 {
       position: relative;
       margin: 0 0 2rem;
+      animation: 1.5s ease fadeIn;
 
       @media (max-width: 992px) {
         & {
@@ -193,6 +203,7 @@ a {
 
     p {
       color: $white;
+      animation: 2.5s ease fadeIn;
 
       @media (max-width: 320px) {
         & {
