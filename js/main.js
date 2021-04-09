@@ -17,19 +17,27 @@ const footerParagraph = document.querySelector("footer p");
 //     }
 // });
 
-document.onreadystatechange = function() 
-{
-    if (document.readyState !== "complete") 
-    {
-        document.querySelector("body").style.visibility = "hidden";
-        document.querySelector(".loader-container").style.visibility = "visible";
-    } 
-    else 
-    {
-        document.querySelector(".loader-container").style.display = "none";
-        document.querySelector("body").style.visibility = "visible";
-    }
-};
+// document.onreadystatechange = function() 
+// {
+//     if (document.readyState !== "complete") 
+//     {
+//         document.querySelector("body").style.visibility = "hidden";
+//         document.querySelector(".loader-container").style.visibility = "visible";
+//     } 
+//     else 
+//     {
+//         document.querySelector(".loader-container").style.display = "none";
+//         document.querySelector("body").style.visibility = "visible";
+//     }
+// };
+
+document.querySelector("body").style.visibility = "hidden";
+document.querySelector(".loader-container").style.visibility = "visible";
+
+window.addEventListener('load', (event) => {
+    document.querySelector(".loader-container").style.display = "none";
+    document.querySelector("body").style.visibility = "visible";
+  });
 
 window.addEventListener("scroll", function() 
 {
