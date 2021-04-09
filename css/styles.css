@@ -84,24 +84,6 @@ a {
   }
 }
 
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 .reveal {
   -webkit-transform: translateY(150px);
           transform: translateY(150px);
@@ -229,8 +211,6 @@ a {
 #introduction .content h1 {
   position: relative;
   margin: 0 0 2rem;
-  -webkit-animation: 1.5s ease fadeIn;
-          animation: 1.5s ease fadeIn;
 }
 
 @media (max-width: 992px) {
@@ -258,8 +238,6 @@ a {
 
 #introduction .content p {
   color: #fff;
-  -webkit-animation: 2.5s ease fadeIn;
-          animation: 2.5s ease fadeIn;
 }
 
 @media (max-width: 320px) {
