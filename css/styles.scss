@@ -40,6 +40,41 @@ a {
   text-decoration: none;
 }
 
+.loader-container {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+
+  .loader {
+    width: 2em;
+    height: 2em;
+    border: 5px solid;
+    color: $primaryColor;
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: 1.5s linear loader infinite;
+  }
+}
+
+@keyframes loader {
+  25% {
+    color: $primaryColor;
+  }
+
+  75% {
+    color: $primaryColorDarker;
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .reveal {
   transform: translateY(150px);
   opacity: 0;
