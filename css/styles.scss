@@ -40,6 +40,17 @@ a {
   text-decoration: none;
 }
 
+.reveal {
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s ease all;
+}
+
+.active {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
 #navBar {
   position: fixed;
   z-index: 1000;
@@ -265,7 +276,7 @@ a {
 
       @media (max-width: 992px) {
         & {
-          width: 0%;
+          display: none;
         }
       }
     }

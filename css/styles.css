@@ -30,6 +30,20 @@ a {
   text-decoration: none;
 }
 
+.reveal {
+  -webkit-transform: translateY(150px);
+          transform: translateY(150px);
+  opacity: 0;
+  -webkit-transition: 1s ease all;
+  transition: 1s ease all;
+}
+
+.active {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  opacity: 1;
+}
+
 #navBar {
   position: fixed;
   z-index: 1000;
@@ -323,7 +337,7 @@ a {
 
 @media (max-width: 992px) {
   #about-me .area .area-image {
-    width: 0%;
+    display: none;
   }
 }
 
