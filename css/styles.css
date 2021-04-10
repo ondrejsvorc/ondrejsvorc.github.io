@@ -641,4 +641,16 @@ footer p {
     opacity: 0;
   }
 }
+
+.visible {
+  display: inline !important;
+}
+
+.github-text {
+  font-size: 0.7em;
+}
+
+.email-text {
+  font-size: 0.7em;
+}
 /*# sourceMappingURL=styles.css.map */

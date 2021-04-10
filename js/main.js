@@ -45,4 +45,24 @@ window.addEventListener("scroll", function()
     }
 });
 
+const githubText = document.querySelector('.github-text');
+const emailText = document.querySelector('.email-text');
+
+githubText.style.display = 'none';
+emailText.style.display = 'none';
+
+async function ShowGitHub()
+{
+    githubText.classList.add('visible');
+    await new Promise(resolve => setTimeout(resolve, 3000));
+    githubText.classList.remove('visible');
+}
+
+async function ShowEmail()
+{
+    emailText.classList.add('visible');
+    await new Promise(resolve => setTimeout(resolve, 3000));
+    emailText.classList.remove('visible');
+}
+
 footerParagraph.innerHTML += " " + new Date().getFullYear();

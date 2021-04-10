@@ -485,3 +485,15 @@ footer {
     opacity: 0;
   }
 }
+
+.visible {
+  display: inline !important;
+}
+
+.github-text {
+  font-size: $sizeMenu - 0.3em;
+}
+
+.email-text {
+  font-size: $sizeMenu - 0.3em;
+}
