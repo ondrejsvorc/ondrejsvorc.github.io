@@ -22,7 +22,7 @@ img {
 
 h1 {
   color: #66fcf1;
-  font-size: 4em;
+  font-size: 3.5em;
   margin: 0 0 1rem;
 }
 
@@ -320,6 +320,25 @@ a {
           animation-delay: 0.5s;
 }
 
+.area-header {
+  width: 100%;
+  height: 5em;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+@media (max-width: 992px) {
+  .area-header {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 772px) {
+  .area-header {
+    font-size: 18px;
+  }
+}
+
 #about-me {
   background: url(/images/Backgrounds/about_me.jpg);
   background-size: cover;
@@ -336,25 +355,6 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-#about-me .area-header {
-  width: 100%;
-  height: 5em;
-  text-align: center;
-  margin-bottom: 2em;
-}
-
-@media (max-width: 992px) {
-  #about-me .area-header {
-    font-size: 20px;
-  }
-}
-
-@media (max-width: 772px) {
-  #about-me .area-header {
-    font-size: 18px;
-  }
 }
 
 #about-me .area {
@@ -473,6 +473,10 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 #projects .project-wrapper {
@@ -596,10 +600,18 @@ footer {
   width: 100%;
   height: 6.6169vh;
   border-top: 0.5px solid #45a29f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 footer p {
-  text-align: center;
   color: white;
   padding-top: 1rem;
 }

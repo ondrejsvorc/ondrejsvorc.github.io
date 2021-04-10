@@ -8,7 +8,7 @@ $blackOpacity: rgba(11, 12, 16, 0.8);
 $white: #fff;
 $grey: #202833;
 
-$sizeTitle: 4em;
+$sizeTitle: 3.5em;
 $sizeButton: 0.8em;
 $sizeMenu: 1em;
 
@@ -260,6 +260,21 @@ a {
   }
 }
 
+.area-header {
+  width: 100%;
+  height: 5em;
+  text-align: center;
+  margin-bottom: 2em;
+
+  @media (max-width: 992px) {
+    font-size: 20px;
+  }
+
+  @media (max-width: 772px) {
+    font-size: 18px;
+  }
+}
+
 #about-me {
   background: url(/images/Backgrounds/about_me.jpg);
   background-size: cover;
@@ -267,25 +282,6 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  .area-header {
-    width: 100%;
-    height: 5em;
-    text-align: center;
-    margin-bottom: 2em;
-
-    @media (max-width: 992px) {
-      & {
-        font-size: 20px;
-      }
-    }
-
-    @media (max-width: 772px) {
-      & {
-        font-size: 18px;
-      }
-    }
-  }
 
   .area {
     padding: 0;
@@ -376,6 +372,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 
   .project-wrapper {
     display: flex;
@@ -467,9 +464,11 @@ footer {
   width: 100%;
   height: 6.6169vh;
   border-top: 0.5px solid $primaryColorDarker;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   p {
-    text-align: center;
     color: white;
     padding-top: 1rem;
   }
