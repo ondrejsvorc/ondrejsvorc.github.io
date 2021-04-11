@@ -278,6 +278,7 @@ a {
 #about-me {
   background: url(/images/Backgrounds/about_me.jpg);
   background-size: cover;
+  background-attachment: fixed;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -369,6 +370,7 @@ a {
 #projects {
   background: url(/images/Backgrounds/about_me.jpg);
   background-size: cover;
+  background-attachment: fixed;
   display: flex;
   align-items: center;
   justify-content: center;

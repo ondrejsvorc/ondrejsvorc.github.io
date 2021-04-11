@@ -342,6 +342,7 @@ a {
 #about-me {
   background: url(/images/Backgrounds/about_me.jpg);
   background-size: cover;
+  background-attachment: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -464,6 +465,7 @@ a {
 #projects {
   background: url(/images/Backgrounds/about_me.jpg);
   background-size: cover;
+  background-attachment: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
