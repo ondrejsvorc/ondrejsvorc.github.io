@@ -453,6 +453,13 @@ a {
 #about-me .area .area-text .area-images img {
   width: 6em;
   height: 6em;
+  -webkit-transition: 0.25s ease-out transform;
+  transition: 0.25s ease-out transform;
+}
+
+#about-me .area .area-text .area-images img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 @media (max-width: 1200px) {

@@ -354,6 +354,11 @@ a {
         img {
           width: 6em;
           height: 6em;
+          transition: 0.25s ease-out transform;
+
+          &:hover {
+            transform: scale(1.1);
+          }
         }
 
         @media (max-width: 1200px) {
