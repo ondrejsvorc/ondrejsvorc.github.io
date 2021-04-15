@@ -3,9 +3,9 @@
 $primaryColor: #66fcf1;
 $primaryColorDarker: #45a29f;
 
-$black: #0b0c10;
+$black: rgb(11, 12, 16);
 $blackOpacity: rgba(11, 12, 16, 0.8);
-$white: #fff;
+$white: #e7eaef;
 $grey: #202833;
 
 $sizeTitle: 3.5em;
@@ -21,7 +21,7 @@ body {
 section {
   padding: 80px 0; /* x, y (80px zhora, 80px zdola)*/
   min-height: 100vh;
-  color: #fff;
+  color: $white;
 }
 
 img {
@@ -276,7 +276,7 @@ a {
 }
 
 #about-me {
-  background: url(/images/Backgrounds/about_me.jpg);
+  background: url(/images/Backgrounds/about_me_projects.jpg);
   background-size: cover;
   background-attachment: fixed;
   display: flex;
@@ -373,7 +373,7 @@ a {
 }
 
 #projects {
-  background: url(/images/Backgrounds/about_me.jpg);
+  background: url(/images/Backgrounds/about_me_projects.jpg);
   background-size: cover;
   background-attachment: fixed;
   display: flex;
@@ -387,10 +387,6 @@ a {
     flex-wrap: wrap;
     column-gap: 1em;
     row-gap: 2em;
-
-    // @media (max-width: 1050px) {
-    //   flex-wrap: wrap;
-    // }
 
     .project {
       background-color: $black;
@@ -432,7 +428,7 @@ a {
         h2 {
           color: $primaryColor;
           text-align: center;
-          font-size: 1.4em;
+          font-size: 1.3em;
         }
       }
 
@@ -441,6 +437,7 @@ a {
         text-align: center;
         min-height: 70px;
         padding: 0 0.5em;
+        height: 80px;
       }
 
       .project-buttons {
@@ -449,7 +446,7 @@ a {
         padding: 0 0 1em 0;
 
         .project-button {
-          background: none;
+          background-color: $black;
           color: $primaryColor;
           border-radius: 0.5em;
           border: 1px $primaryColorDarker solid;

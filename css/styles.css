@@ -10,7 +10,7 @@ section {
   padding: 80px 0;
   /* x, y (80px zhora, 80px zdola)*/
   min-height: 100vh;
-  color: #fff;
+  color: #e7eaef;
 }
 
 img {
@@ -151,7 +151,7 @@ a {
 
 #navBar .navbar a {
   font-size: 1em;
-  color: #fff !important;
+  color: #e7eaef !important;
   /* větší priorita před bootstrapem */
 }
 
@@ -237,7 +237,7 @@ a {
 }
 
 #introduction .content p {
-  color: #fff;
+  color: #e7eaef;
 }
 
 @media (max-width: 320px) {
@@ -340,7 +340,7 @@ a {
 }
 
 #about-me {
-  background: url(/images/Backgrounds/about_me.jpg);
+  background: url(/images/Backgrounds/about_me_projects.jpg);
   background-size: cover;
   background-attachment: fixed;
   display: -webkit-box;
@@ -470,7 +470,7 @@ a {
 }
 
 #projects {
-  background: url(/images/Backgrounds/about_me.jpg);
+  background: url(/images/Backgrounds/about_me_projects.jpg);
   background-size: cover;
   background-attachment: fixed;
   display: -webkit-box;
@@ -570,7 +570,7 @@ a {
 #projects .project-wrapper .project .project-header h2 {
   color: #66fcf1;
   text-align: center;
-  font-size: 1.4em;
+  font-size: 1.3em;
 }
 
 #projects .project-wrapper .project .project-info {
@@ -578,6 +578,7 @@ a {
   text-align: center;
   min-height: 70px;
   padding: 0 0.5em;
+  height: 80px;
 }
 
 #projects .project-wrapper .project .project-buttons {
@@ -590,7 +591,7 @@ a {
 }
 
 #projects .project-wrapper .project .project-buttons .project-button {
-  background: none;
+  background-color: #0b0c10;
   color: #66fcf1;
   border-radius: 0.5em;
   border: 1px #45a29f solid;
@@ -602,7 +603,7 @@ a {
 
 #projects .project-wrapper .project .project-buttons .project-button:hover {
   background-color: #45a29f;
-  color: #fff;
+  color: #e7eaef;
 }
 
 footer {
