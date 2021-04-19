@@ -14,19 +14,11 @@
 </head>
 
 <body>
-
-<div class="loader-container">
-  <div class="loader">
+  <div class="loader-container">
+    <div class="loader"></div>
   </div>
-</div>
 
   <nav id="navBar" class="container-fluid">
-      <!-- <div class="banner container">
-        <a href="mailto:ondrejsvorc@email.cz">ondrejsvorc@email.cz</a>
-        <div class="logo">
-          <img src="images/Other/logo.png">
-        </div>
-      </div> -->
       <div class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
           <div class="navbar-brand">
@@ -50,9 +42,15 @@
               <li class="nav-item">
                 <a class="nav-link" href="#about-me">O mně</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#projects">Projekty</a>
-              </li>
+              <div class="dropdown">
+                <a class="dropdown-toggle" href="#" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                  Projekty
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li><a class="dropdown-item" href="#projects">Hlavní projekty</a></li>
+                  <li><a class="dropdown-item" href="html/projects.html">Všechny projekty</a></li>
+                </ul>
+              </div>
             </ul>
           </div>
         </div>
@@ -80,7 +78,7 @@
           </section>
 
           <section id="about-me">
-            <div class="area-header reveal">
+            <div class="section-header reveal">
               <h1>O mně</h1>
             </div>
             <div class="container reveal">
@@ -107,10 +105,24 @@
           </section>
 
           <section id="projects">
-            <div class="area-header reveal">
+            <div class="section-header reveal">
               <h1>Projekty</h1>
             </div>          
             <div class="project-wrapper container reveal">
+              <div class="project">
+                <div class="project-image">
+                  <img src="images/Applications/ecahoscores2.png">
+                </div>
+                <div class="project-header">
+                  <h2>ECAHOScores</h2>
+                </div>
+                <div class="project-info">
+                  <p>Aplikace pro pořadatele profesionálních koňských výstav.</p>
+                </div>
+                <div class="project-buttons">
+                  <button class="project-button" onclick="location.href='/html/projects.html#ecahoscores'">Více info</button>
+                </div>
+            </div>
               <div class="project">
                 <div class="project-image">
                   <img src="images/Applications/cataloguing_helper.jpg">
@@ -119,59 +131,43 @@
                   <h2>Cataloguing-Helper</h2>
                 </div>
                 <div class="project-info">
-                  <p>Pomocník při katalogizaci sběratelské činnosti hygienicky balených cukrů</p>
+                  <p>Pomocník při katalogizaci sběratelské činnosti hygienicky balených cukrů.</p>
                 </div>
                 <div class="project-buttons">
-                  <button class="project-button" onclick="window.open('https://github.com/ondrejsvorc/Cataloguing-Helper')">GitHub</button>
-                  <!-- <button class="project-button">Demo</button> -->
+                  <button class="project-button" onclick="location.href='/html/projects.html#cataloguing-helper'">Více info</button>
+                  <button class="project-button" onclick=" window.open('https://github.com/ondrejsvorc/Cataloguing-Helper','_blank')">GitHub</button>
                 </div>
             </div>
             <div class="project">
                 <div class="project-image">
-                  <img src="images/Applications/backmeup.jpg">
+                  <img src="images/Applications/backmeup1.png">
                 </div>
                 <div class="project-header">
                   <h2>BackMeUp</h2>
                 </div>
                 <div class="project-info">
-                  <p>Aplikace pro automatické zálohování dat</p>
+                  <p>Aplikace pro automatické zálohování dat.</p>
                 </div>
                 <div class="project-buttons">
-                  <button class="project-button" onclick="window.open('https://github.com/ondrejsvorc/BackMeUp')">GitHub</button>
-                  <!-- <button class="project-button">Demo</button> -->
+                  <button class="project-button" onclick="location.href='/html/projects.html#backmeup'">Více info</button>
+                  <button class="project-button" onclick=" window.open('https://github.com/ondrejsvorc/Cataloguing-Helper','_blank')">GitHub</button>
                 </div>
               </div>
             <div class="project">
                 <div class="project-image">
-                  <img src="images/Applications/texted.jpg">
-                </div>
-                <div class="project-header">
-                  <h2>TextEd</h2>
-                </div>
-                <div class="project-info">
-                  <p>Desktopový textový procesor</p>
-                </div>
-                <div class="project-buttons">
-                  <button class="project-button" onclick="window.open('https://github.com/ondrejsvorc/TextEd')">GitHub</button>
-                  <!-- <button class="project-button">Demo</button> -->
-                </div>
-            </div>
-            <div class="project">
-                <div class="project-image">
-                  <img src="images/Applications/turtlewalk.jpg">
+                  <img src="images/Applications/turtlewalk1.jpg">
                 </div>
                 <div class="project-header">
                   <h2>TurtleWalk</h2>
                 </div>
                 <div class="project-info">
-                  <p>Logická hra pro děti</p>
+                  <p>Logická hra pro děti.</p>
                 </div>
                 <div class="project-buttons">
-                  <button class="project-button" onclick="window.open('https://github.com/ondrejsvorc/TurtleWalk')">GitHub</button>
-                  <!-- <button class="project-button">Demo</button> -->
+                  <button class="project-button" onclick="location.href='/html/projects.html#turtlewalk'">Více info</button>
+                  <button class="project-button" onclick=" window.open('https://github.com/ondrejsvorc/TurtleWalk','_blank')">GitHub</button>
                 </div>
             </div>
-          </div>
         </section>
 
           <footer>
@@ -179,9 +175,6 @@
           </footer>
       </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
-        integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
-        crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
         integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
         crossorigin="anonymous"></script>

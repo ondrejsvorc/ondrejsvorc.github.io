@@ -95,27 +95,25 @@ a {
   transition: 0.5s ease all;
   top: 0px;
 
-  .banner {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    column-gap: 4em;
-
-    a {
-      color: white;
-      text-decoration: none;
-    }
-
-    .logo {
-      width: 4em;
-      height: 4em;
-    }
-  }
-
   .navbar {
     .navbar-nav {
       display: flex;
       column-gap: 1rem;
+
+      .dropdown {
+        display: flex;
+        align-items: center;
+
+        ul {
+          background: $black;
+
+          li {
+            a:hover {
+              background: none;
+            }
+          }
+        }
+      }
     }
 
     .navbar-brand {
@@ -125,7 +123,7 @@ a {
 
     a {
       font-size: $sizeMenu;
-      color: $white !important; /* větší priorita před bootstrapem */
+      color: $white !important;
 
       &:hover {
         color: $primaryColor !important;
@@ -163,15 +161,11 @@ a {
       margin: 0 0 2rem;
 
       @media (max-width: 992px) {
-        & {
-          font-size: 3em;
-        }
+        font-size: 3em;
       }
 
       @media (max-width: 772px) {
-        & {
-          font-size: 2em;
-        }
+        font-size: 2em;
       }
 
       span {
@@ -195,9 +189,7 @@ a {
       color: $white;
 
       @media (max-width: 320px) {
-        & {
-          font-size: 0.8em;
-        }
+        font-size: 0.8em;
       }
     }
   }
@@ -260,7 +252,7 @@ a {
   }
 }
 
-.area-header {
+.section-header {
   width: 100%;
   height: 5em;
   text-align: center;
@@ -273,16 +265,20 @@ a {
   @media (max-width: 772px) {
     font-size: 18px;
   }
+
+  @media (max-width: 700px) {
+    font-size: 13px;
+  }
 }
 
 #about-me {
-  background: url(/images/Backgrounds/about_me_projects.jpg);
-  background-size: cover;
-  background-attachment: fixed;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: url(/images/Backgrounds/about_me_projects.jpg);
+  background-size: cover;
+  background-attachment: fixed;
 
   .area {
     padding: 0;
@@ -291,9 +287,7 @@ a {
     display: flex;
 
     @media (max-width: 992px) {
-      & {
-        font-size: 13px;
-      }
+      font-size: 13px;
     }
 
     .area-image {
@@ -307,9 +301,7 @@ a {
       align-content: center;
 
       @media (max-width: 992px) {
-        & {
-          display: none;
-        }
+        display: none;
       }
     }
 
@@ -327,16 +319,12 @@ a {
       padding: 0 2em;
 
       @media (max-width: 992px) {
-        & {
-          width: 100%;
-          font-size: 18px;
-        }
+        width: 100%;
+        font-size: 18px;
       }
 
       @media (max-width: 772px) {
-        & {
-          font-size: 14px;
-        }
+        font-size: 14px;
       }
 
       a {
@@ -373,13 +361,13 @@ a {
 }
 
 #projects {
-  background: url(/images/Backgrounds/about_me_projects.jpg);
-  background-size: cover;
-  background-attachment: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background: url(/images/Backgrounds/about_me_projects.jpg);
+  background-size: cover;
+  background-attachment: fixed;
 
   .project-wrapper {
     display: flex;
@@ -500,4 +488,93 @@ footer {
 
 .email-text {
   font-size: $sizeMenu - 0.3em;
+}
+
+.main-project {
+  background: url(/images/Backgrounds/about_me_projects.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+
+  .project-wrapper {
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-direction: row;
+    background: $blackOpacity;
+    border-radius: 0.5em 0.5em 0em 0em;
+
+    .project-text {
+      width: 60%;
+      height: 100%;
+      padding: 1em;
+      text-align: justify;
+
+      @media (max-width: 1200px) {
+        width: 100%;
+      }
+
+      @media (max-width: 992px) {
+        font-size: 13px;
+      }
+
+      a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        transition: 0.5s ease color;
+
+        &:hover {
+          color: $primaryColor;
+        }
+      }
+
+      h2 {
+        margin-top: 1.5em;
+        font-weight: bold;
+        font-size: 1.25em;
+      }
+    }
+
+    .project-images {
+      width: 40%;
+      height: auto;
+
+      @media (max-width: 1200px) {
+        display: none;
+      }
+
+      .project-image-1 {
+        margin: 1em;
+        transition: 0.5s ease transform;
+
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+
+      .project-image-2 {
+        margin: 1em;
+        transition: 0.5s ease transform;
+
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+
+      .github-link {
+        font-size: 50px;
+        text-align: center;
+
+        .fab {
+          color: $primaryColor !important;
+          transition: 0.5s ease color;
+
+          &:hover {
+            color: $white !important;
+          }
+        }
+      }
+    }
+  }
 }
