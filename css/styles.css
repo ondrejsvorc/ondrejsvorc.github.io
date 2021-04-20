@@ -231,7 +231,7 @@ a {
   color: #e7eaef;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 360px) {
   #introduction .content p {
     font-size: 0.8em;
   }
@@ -333,6 +333,12 @@ a {
 @media (max-width: 700px) {
   .section-header {
     font-size: 13px;
+  }
+}
+
+@media (max-width: 360px) {
+  .section-header {
+    font-size: 9px;
   }
 }
 
