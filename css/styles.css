@@ -380,7 +380,8 @@ a {
   width: 40%;
   height: 100%;
   border-radius: 0.5em 0 0 0;
-  background-color: #45a29f;
+  background: url(/images/Other/me.jpg);
+  background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -393,7 +394,7 @@ a {
       align-content: center;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   #about-me .area .area-image {
     display: none;
   }
@@ -416,10 +417,10 @@ a {
       align-content: center;
   text-align: justify;
   row-gap: 2em;
-  padding: 0 2em;
+  padding: 2em;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   #about-me .area .area-text {
     width: 100%;
     font-size: 18px;
