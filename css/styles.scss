@@ -34,10 +34,6 @@ h1 {
   color: $primaryColor;
   font-size: $sizeTitle;
   margin: 0 0 1rem;
-
-  @media (max-width: 450px) {
-    font-size: 2.85em;
-  }
 }
 
 a {
@@ -274,8 +270,8 @@ a {
     font-size: 13px;
   }
 
-  @media (max-width: 360px) {
-    font-size: 9px;
+  @media (max-width: 420px) {
+    font-size: 8px;
   }
 }
 
@@ -302,7 +298,6 @@ a {
       width: 40%;
       height: 100%;
       border-radius: 0.5em 0 0 0;
-      // background-color: $primaryColorDarker;
       background: url(/images/Other/me.jpg);
       background-size: cover;
       display: flex;
@@ -335,6 +330,10 @@ a {
 
       @media (max-width: 772px) {
         font-size: 14px;
+      }
+
+      @media (max-width: 440px) {
+        font-size: 12px;
       }
 
       a {
