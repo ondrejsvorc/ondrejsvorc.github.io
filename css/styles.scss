@@ -34,6 +34,10 @@ h1 {
   color: $primaryColor;
   font-size: $sizeTitle;
   margin: 0 0 1rem;
+
+  @media (max-width: 450px) {
+    font-size: 2.85em;
+  }
 }
 
 a {
