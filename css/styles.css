@@ -789,18 +789,42 @@ footer p {
           transform: scale(1.05);
 }
 
-.main-project .project-wrapper .project-images .github-link {
+.main-project .project-wrapper .project-images .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 2em;
+          column-gap: 2em;
+}
+
+.main-project .project-wrapper .project-images .icons .link {
   font-size: 50px;
   text-align: center;
 }
 
-.main-project .project-wrapper .project-images .github-link .fab {
+.main-project .project-wrapper .project-images .icons .link .fab {
   color: #66fcf1 !important;
   -webkit-transition: 0.5s ease color;
   transition: 0.5s ease color;
 }
 
-.main-project .project-wrapper .project-images .github-link .fab:hover {
+.main-project .project-wrapper .project-images .icons .link .fab:hover {
+  color: #e7eaef !important;
+}
+
+.main-project .project-wrapper .project-images .icons .link .fas {
+  color: #66fcf1 !important;
+  -webkit-transition: 0.5s ease color;
+  transition: 0.5s ease color;
+}
+
+.main-project .project-wrapper .project-images .icons .link .fas:hover {
   color: #e7eaef !important;
 }
 /*# sourceMappingURL=styles.css.map */

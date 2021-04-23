@@ -584,16 +584,32 @@ footer {
         }
       }
 
-      .github-link {
-        font-size: 50px;
-        text-align: center;
+      .icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 2em;
 
-        .fab {
-          color: $primaryColor !important;
-          transition: 0.5s ease color;
+        .link {
+          font-size: 50px;
+          text-align: center;
 
-          &:hover {
-            color: $white !important;
+          .fab {
+            color: $primaryColor !important;
+            transition: 0.5s ease color;
+
+            &:hover {
+              color: $white !important;
+            }
+          }
+
+          .fas {
+            color: $primaryColor !important;
+            transition: 0.5s ease color;
+
+            &:hover {
+              color: $white !important;
+            }
           }
         }
       }
