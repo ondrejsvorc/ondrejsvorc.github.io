@@ -808,23 +808,13 @@ footer p {
   text-align: center;
 }
 
-.main-project .project-wrapper .project-images .icons .link .fab {
+.main-project .project-wrapper .project-images .icons .link .icon {
   color: #66fcf1 !important;
   -webkit-transition: 0.5s ease color;
   transition: 0.5s ease color;
 }
 
-.main-project .project-wrapper .project-images .icons .link .fab:hover {
-  color: #e7eaef !important;
-}
-
-.main-project .project-wrapper .project-images .icons .link .fas {
-  color: #66fcf1 !important;
-  -webkit-transition: 0.5s ease color;
-  transition: 0.5s ease color;
-}
-
-.main-project .project-wrapper .project-images .icons .link .fas:hover {
+.main-project .project-wrapper .project-images .icons .link .icon:hover {
   color: #e7eaef !important;
 }
 /*# sourceMappingURL=styles.css.map */
