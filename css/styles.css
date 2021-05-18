@@ -695,9 +695,7 @@ footer p {
 }
 
 .main-project .project-wrapper {
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
+  height: 33em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -711,6 +709,18 @@ footer p {
   flex-direction: row;
   background: rgba(11, 12, 16, 0.8);
   border-radius: 0.5em 0.5em 0em 0em;
+}
+
+@media (max-width: 1200px) {
+  .main-project .project-wrapper {
+    height: 30em;
+  }
+}
+
+@media (max-width: 990px) {
+  .main-project .project-wrapper {
+    height: 18em;
+  }
 }
 
 .main-project .project-wrapper .project-text {

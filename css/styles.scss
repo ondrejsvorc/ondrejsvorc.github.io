@@ -352,6 +352,31 @@ a {
         align-content: center;
         column-gap: 0.5em;
 
+        // .flip-card {
+        //   display: grid;
+        //   place-items: center;
+        //   transition: 1s ease-in-out;
+
+        //   &:hover {
+        //     .card-container {
+        //       transform: rotateY(180deg);
+        //     }
+        //   }
+
+        //   .card-container {
+        //     display: grid;
+        //     place-items: center;
+
+        //     .front {
+        //       grid-area: 1 / 1;
+        //     }
+
+        //     .back {
+        //       grid-area: 1 / 1;
+        //     }
+        //   }
+        // }
+
         img {
           width: 6em;
           height: 6em;
@@ -514,13 +539,21 @@ footer {
   background-attachment: fixed;
 
   .project-wrapper {
-    height: max-content;
+    height: 33em;
     display: flex;
     justify-content: center;
     flex-direction: column;
     flex-direction: row;
     background: $blackOpacity;
     border-radius: 0.5em 0.5em 0em 0em;
+
+    @media (max-width: 1200px) {
+      height: 30em;
+    }
+
+    @media (max-width: 990px) {
+      height: 18em;
+    }
 
     .project-text {
       width: 60%;
