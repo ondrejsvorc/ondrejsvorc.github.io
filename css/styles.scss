@@ -4,12 +4,12 @@ $primaryColor: #66fcf1;
 $primaryColorDarker: #45a29f;
 
 $black: rgb(11, 12, 16);
-$blackOpacity: rgba(11, 12, 16, 0.8);
+$blackOpacity: rgba(11, 12, 16, .8);
 $white: #e7eaef;
 $grey: #202833;
 
 $sizeTitle: 3.5em;
-$sizeButton: 0.8em;
+$sizeButton: .8em;
 $sizeMenu: 1em;
 
 body {
@@ -19,7 +19,8 @@ body {
 }
 
 section {
-  padding: 80px 0; /* x, y (80px zhora, 80px zdola)*/
+  padding: 80px 0;
+  /* x, y (80px zhora, 80px zdola)*/
   min-height: 100vh;
   color: $white;
 }
@@ -90,9 +91,8 @@ a {
   position: fixed;
   z-index: 1000;
   padding: 0;
-  background-color: rgba(0, 0, 0, 0.6);
-  border-bottom: 0.5px solid $primaryColorDarker;
-  transition: 0.5s ease all;
+  background-color: rgba(0, 0, 0, .6);
+  border-bottom: .5px solid $primaryColorDarker;
   top: 0px;
 
   .navbar {
@@ -127,7 +127,7 @@ a {
 
       &:hover {
         color: $primaryColor !important;
-        transition: 0.5s ease color;
+        transition: .5s ease color;
       }
     }
 
@@ -175,13 +175,11 @@ a {
         left: 0;
         width: 100%;
         height: 2px;
-        background: linear-gradient(
-          90deg,
-          rgba(0, 0, 0, 0) 0%,
-          rgba(69, 162, 159, 1) 40%,
-          rgba(69, 162, 159, 1) 60%,
-          rgba(0, 0, 0, 0) 100%
-        );
+        background: linear-gradient(90deg,
+            rgba(0, 0, 0, 0) 0%,
+            rgba(69, 162, 159, 1) 40%,
+            rgba(69, 162, 159, 1) 60%,
+            rgba(0, 0, 0, 0) 100%);
       }
     }
 
@@ -189,7 +187,7 @@ a {
       color: $white;
 
       @media (max-width: 360px) {
-        font-size: 0.8em;
+        font-size: .8em;
       }
     }
   }
@@ -201,11 +199,11 @@ a {
     transform: translateX(-50%);
     border: 3px solid $primaryColor;
     border-radius: 100%;
-    padding: 0.5rem;
+    padding: .5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: 0.3s ease background;
+    transition: .3s ease background;
 
     a {
       text-decoration: none;
@@ -219,7 +217,7 @@ a {
       display: flex;
       justify-content: center;
       align-items: center;
-      transition: 0.3s ease color;
+      transition: .3s ease color;
     }
 
     &:hover {
@@ -247,7 +245,7 @@ a {
     }
 
     &::after {
-      animation-delay: 0.5s;
+      animation-delay: .5s;
     }
   }
 }
@@ -287,7 +285,7 @@ a {
   .area {
     padding: 0;
     height: 30em;
-    border-radius: 0.5em 0.5em 0 0;
+    border-radius: .5em .5em 0 0;
     display: flex;
 
     @media (max-width: 992px) {
@@ -301,7 +299,7 @@ a {
     .area-image {
       width: 40%;
       height: 100%;
-      border-radius: 0.5em 0 0 0;
+      border-radius: .5em 0 0 0;
       background: url(/images/Other/me.jpg);
       background-size: cover;
       display: flex;
@@ -317,8 +315,8 @@ a {
     .area-text {
       width: 60%;
       height: 100%;
-      border-radius: 0 0.5em 0 0;
-      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 0 .5em 0 0;
+      background-color: rgba(0, 0, 0, .6);
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
@@ -350,37 +348,12 @@ a {
         display: flex;
         justify-content: center;
         align-content: center;
-        column-gap: 0.5em;
-
-        // .flip-card {
-        //   display: grid;
-        //   place-items: center;
-        //   transition: 1s ease-in-out;
-
-        //   &:hover {
-        //     .card-container {
-        //       transform: rotateY(180deg);
-        //     }
-        //   }
-
-        //   .card-container {
-        //     display: grid;
-        //     place-items: center;
-
-        //     .front {
-        //       grid-area: 1 / 1;
-        //     }
-
-        //     .back {
-        //       grid-area: 1 / 1;
-        //     }
-        //   }
-        // }
+        column-gap: .5em;
 
         img {
           width: 6em;
           height: 6em;
-          transition: 0.25s ease-out transform;
+          transition: .25s ease-out transform;
 
           &:hover {
             transform: scale(1.1);
@@ -423,7 +396,7 @@ a {
       flex-direction: column;
       align-items: center;
       justify-content: space-between;
-      transition: 0.25s ease-out transform;
+      transition: .25s ease-out transform;
       row-gap: 1.5rem;
 
       @media (min-width: 1200px) {
@@ -436,7 +409,7 @@ a {
 
       @media (max-height: 720px) {
         flex-basis: 200px;
-        font-size: 0.9em;
+        font-size: .9em;
       }
 
       &:hover {
@@ -464,10 +437,10 @@ a {
       }
 
       .project-info {
-        font-size: 0.8em;
+        font-size: .8em;
         text-align: center;
         min-height: 70px;
-        padding: 0 0.5em;
+        padding: 0 .5em;
         height: 80px;
       }
 
@@ -479,11 +452,11 @@ a {
         .project-button {
           background-color: $black;
           color: $primaryColor;
-          border-radius: 0.5em;
+          border-radius: .5em;
           border: 1px $primaryColorDarker solid;
           outline: none;
-          transition: 0.25s ease-out all;
-          padding: 0.5em;
+          transition: .25s ease-out all;
+          padding: .5em;
 
           &:hover {
             background-color: $primaryColorDarker;
@@ -498,7 +471,7 @@ a {
 footer {
   width: 100%;
   height: 6.6169vh;
-  border-top: 0.5px solid $primaryColorDarker;
+  border-top: .5px solid $primaryColorDarker;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -521,18 +494,6 @@ footer {
   }
 }
 
-.visible {
-  display: inline !important;
-}
-
-.github-text {
-  font-size: $sizeMenu - 0.3em;
-}
-
-.email-text {
-  font-size: $sizeMenu - 0.3em;
-}
-
 .main-project {
   background: url(/images/Backgrounds/about_me_projects.jpg);
   background-size: cover;
@@ -545,7 +506,7 @@ footer {
     flex-direction: column;
     flex-direction: row;
     background: $blackOpacity;
-    border-radius: 0.5em 0.5em 0em 0em;
+    border-radius: .5em .5em 0em 0em;
 
     @media (max-width: 1200px) {
       height: 30em;
@@ -577,7 +538,7 @@ footer {
         text-decoration: none;
         color: white;
         font-weight: bold;
-        transition: 0.5s ease color;
+        transition: .5s ease color;
 
         &:hover {
           color: $primaryColor;
@@ -601,7 +562,7 @@ footer {
 
       .project-image-1 {
         margin: 1em;
-        transition: 0.5s ease transform;
+        transition: .5s ease transform;
 
         &:hover {
           transform: scale(1.05);
@@ -610,7 +571,7 @@ footer {
 
       .project-image-2 {
         margin: 1em;
-        transition: 0.5s ease transform;
+        transition: .5s ease transform;
 
         &:hover {
           transform: scale(1.05);
@@ -629,7 +590,7 @@ footer {
 
           .icon {
             color: $primaryColor !important;
-            transition: 0.5s ease color;
+            transition: .5s ease color;
 
             &:hover {
               color: $white !important;

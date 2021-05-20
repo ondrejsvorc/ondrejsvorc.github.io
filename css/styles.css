@@ -103,8 +103,6 @@ a {
   padding: 0;
   background-color: rgba(0, 0, 0, 0.6);
   border-bottom: 0.5px solid #45a29f;
-  -webkit-transition: 0.5s ease all;
-  transition: 0.5s ease all;
   top: 0px;
 }
 
@@ -148,8 +146,8 @@ a {
 
 #navBar .navbar a:hover {
   color: #66fcf1 !important;
-  -webkit-transition: 0.5s ease color;
-  transition: 0.5s ease color;
+  -webkit-transition: .5s ease color;
+  transition: .5s ease color;
 }
 
 @media (min-width: 992px) {
@@ -233,7 +231,7 @@ a {
 
 @media (max-width: 360px) {
   #introduction .content p {
-    font-size: 0.8em;
+    font-size: .8em;
   }
 }
 
@@ -245,7 +243,7 @@ a {
           transform: translateX(-50%);
   border: 3px solid #66fcf1;
   border-radius: 100%;
-  padding: 0.5rem;
+  padding: .5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -255,8 +253,8 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: 0.3s ease background;
-  transition: 0.3s ease background;
+  -webkit-transition: .3s ease background;
+  transition: .3s ease background;
 }
 
 #introduction .scroll-to-next a {
@@ -277,8 +275,8 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: 0.3s ease color;
-  transition: 0.3s ease color;
+  -webkit-transition: .3s ease color;
+  transition: .3s ease color;
 }
 
 #introduction .scroll-to-next:hover {
@@ -307,8 +305,8 @@ a {
 }
 
 #introduction .scroll-to-next::after {
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
 }
 
 .section-header {
@@ -364,7 +362,7 @@ a {
 #about-me .area {
   padding: 0;
   height: 30em;
-  border-radius: 0.5em 0.5em 0 0;
+  border-radius: .5em .5em 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -385,7 +383,7 @@ a {
 #about-me .area .area-image {
   width: 40%;
   height: 100%;
-  border-radius: 0.5em 0 0 0;
+  border-radius: .5em 0 0 0;
   background: url(/images/Other/me.jpg);
   background-size: cover;
   display: -webkit-box;
@@ -409,7 +407,7 @@ a {
 #about-me .area .area-text {
   width: 60%;
   height: 100%;
-  border-radius: 0 0.5em 0 0;
+  border-radius: 0 .5em 0 0;
   background-color: rgba(0, 0, 0, 0.6);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -462,15 +460,15 @@ a {
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
-  -webkit-column-gap: 0.5em;
-          column-gap: 0.5em;
+  -webkit-column-gap: .5em;
+          column-gap: .5em;
 }
 
 #about-me .area .area-text .area-images img {
   width: 6em;
   height: 6em;
-  -webkit-transition: 0.25s ease-out transform;
-  transition: 0.25s ease-out transform;
+  -webkit-transition: .25s ease-out transform;
+  transition: .25s ease-out transform;
 }
 
 #about-me .area .area-text .area-images img:hover {
@@ -540,8 +538,8 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-transition: 0.25s ease-out transform;
-  transition: 0.25s ease-out transform;
+  -webkit-transition: .25s ease-out transform;
+  transition: .25s ease-out transform;
   row-gap: 1.5rem;
 }
 
@@ -563,7 +561,7 @@ a {
   #projects .project-wrapper .project {
     -ms-flex-preferred-size: 200px;
         flex-basis: 200px;
-    font-size: 0.9em;
+    font-size: .9em;
   }
 }
 
@@ -598,10 +596,10 @@ a {
 }
 
 #projects .project-wrapper .project .project-info {
-  font-size: 0.8em;
+  font-size: .8em;
   text-align: center;
   min-height: 70px;
-  padding: 0 0.5em;
+  padding: 0 .5em;
   height: 80px;
 }
 
@@ -617,12 +615,12 @@ a {
 #projects .project-wrapper .project .project-buttons .project-button {
   background-color: #0b0c10;
   color: #66fcf1;
-  border-radius: 0.5em;
+  border-radius: .5em;
   border: 1px #45a29f solid;
   outline: none;
-  -webkit-transition: 0.25s ease-out all;
-  transition: 0.25s ease-out all;
-  padding: 0.5em;
+  -webkit-transition: .25s ease-out all;
+  transition: .25s ease-out all;
+  padding: .5em;
 }
 
 #projects .project-wrapper .project .project-buttons .project-button:hover {
@@ -676,18 +674,6 @@ footer p {
   }
 }
 
-.visible {
-  display: inline !important;
-}
-
-.github-text {
-  font-size: 0.7em;
-}
-
-.email-text {
-  font-size: 0.7em;
-}
-
 .main-project {
   background: url(/images/Backgrounds/about_me_projects.jpg);
   background-size: cover;
@@ -708,7 +694,7 @@ footer p {
           flex-direction: column;
   flex-direction: row;
   background: rgba(11, 12, 16, 0.8);
-  border-radius: 0.5em 0.5em 0em 0em;
+  border-radius: .5em .5em 0em 0em;
 }
 
 @media (max-width: 1200px) {
@@ -752,8 +738,8 @@ footer p {
   text-decoration: none;
   color: white;
   font-weight: bold;
-  -webkit-transition: 0.5s ease color;
-  transition: 0.5s ease color;
+  -webkit-transition: .5s ease color;
+  transition: .5s ease color;
 }
 
 .main-project .project-wrapper .project-text a:hover {
@@ -779,8 +765,8 @@ footer p {
 
 .main-project .project-wrapper .project-images .project-image-1 {
   margin: 1em;
-  -webkit-transition: 0.5s ease transform;
-  transition: 0.5s ease transform;
+  -webkit-transition: .5s ease transform;
+  transition: .5s ease transform;
 }
 
 .main-project .project-wrapper .project-images .project-image-1:hover {
@@ -790,8 +776,8 @@ footer p {
 
 .main-project .project-wrapper .project-images .project-image-2 {
   margin: 1em;
-  -webkit-transition: 0.5s ease transform;
-  transition: 0.5s ease transform;
+  -webkit-transition: .5s ease transform;
+  transition: .5s ease transform;
 }
 
 .main-project .project-wrapper .project-images .project-image-2:hover {
@@ -820,8 +806,8 @@ footer p {
 
 .main-project .project-wrapper .project-images .icons .link .icon {
   color: #66fcf1 !important;
-  -webkit-transition: 0.5s ease color;
-  transition: 0.5s ease color;
+  -webkit-transition: .5s ease color;
+  transition: .5s ease color;
 }
 
 .main-project .project-wrapper .project-images .icons .link .icon:hover {

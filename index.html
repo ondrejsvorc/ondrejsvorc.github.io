@@ -22,14 +22,8 @@
       <div class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
           <div class="navbar-brand">
-            <a onmouseover="ShowGitHub()" title="github.com/ondrejsvorc" class="github-icon fab fa-github" href="https://github.com/ondrejsvorc" target="_blank"></a>
-            <div class="github-text">
-              <p>github.com/ondrejsvorc</p>
-            </div>
-            <a onmouseover="ShowEmail()" title="ondrejsvorc@email.cz" class="email-icon fas fa-at" href="mailto:ondrejsvorc@email.cz"></a>
-            <div class="email-text">
-              <p>ondrejsvorc@email.cz</p>
-            </div>
+            <a data-bs-toggle="tooltip" data-bs-placement="bottom" title="github.com/ondrejsvorc" class="github-icon fab fa-github" href="https://github.com/ondrejsvorc" target="_blank"></a>
+            <a data-bs-toggle="tooltip" data-bs-placement="bottom" title="ondrejsvorc@email.cz" class="email-icon fas fa-at" href="mailto:ondrejsvorc@email.cz"></a>
           </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -40,7 +34,7 @@
                 <a class="nav-link" aria-current="page" href="#">Úvod</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#about-me">O mně</a>
+                <a class="nav-link about" href="#">O mně</a>
               </li>
               <div class="dropdown">
                 <a class="dropdown-toggle" href="#" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
@@ -48,7 +42,7 @@
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                   <li><a class="dropdown-item" href="#projects">Hlavní projekty</a></li>
-                  <li><a class="dropdown-item" href="html/projects.html">Všechny projekty</a></li>
+                  <li><a class="dropdown-item" href="projects.html">Všechny projekty</a></li>
                 </ul>
               </div>
             </ul>
@@ -130,7 +124,7 @@
                   <p>Aplikace pro pořadatele profesionálních koňských výstav.</p>
                 </div>
                 <div class="project-buttons">
-                  <button class="project-button" onclick="location.href='/html/projects.html#ecahoscores'">Více info</button>
+                  <button class="project-button" onclick="location.href='projects.html#ecahoscores'">Více info</button>
                 </div>
             </div>
               <div class="project">
@@ -144,7 +138,7 @@
                   <p>Pomocník při katalogizaci sběratelské činnosti hygienicky balených cukrů.</p>
                 </div>
                 <div class="project-buttons">
-                  <button class="project-button" onclick="location.href='/html/projects.html#cataloguing-helper'">Více info</button>
+                  <button class="project-button" onclick="location.href='projects.html#cataloguing-helper'">Více info</button>
                   <button class="project-button" onclick=" window.open('https://github.com/ondrejsvorc/Cataloguing-Helper','_blank')">GitHub</button>
                 </div>
             </div>
@@ -159,7 +153,7 @@
                   <p>Aplikace pro automatické zálohování dat.</p>
                 </div>
                 <div class="project-buttons">
-                  <button class="project-button" onclick="location.href='/html/projects.html#backmeup'">Více info</button>
+                  <button class="project-button" onclick="location.href='projects.html#backmeup'">Více info</button>
                   <button class="project-button" onclick=" window.open('https://github.com/ondrejsvorc/Cataloguing-Helper','_blank')">GitHub</button>
                 </div>
               </div>
@@ -174,7 +168,7 @@
                   <p>Logická hra pro děti.</p>
                 </div>
                 <div class="project-buttons">
-                  <button class="project-button" onclick="location.href='/html/projects.html#turtlewalk'">Více info</button>
+                  <button class="project-button" onclick="location.href='projects.html#turtlewalk'">Více info</button>
                   <button class="project-button" onclick=" window.open('https://github.com/ondrejsvorc/TurtleWalk','_blank')">GitHub</button>
                 </div>
             </div>
@@ -185,6 +179,7 @@
           </footer>
       </main>
 
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
         integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
         crossorigin="anonymous"></script>
