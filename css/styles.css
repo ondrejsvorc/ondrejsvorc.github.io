@@ -464,6 +464,13 @@ a {
   display: flex;
 }
 
+@media (max-width: 1600px) {
+  #about-me .area {
+    font-size: 18px;
+    height: 27em;
+  }
+}
+
 @media (max-width: 992px) {
   #about-me .area {
     font-size: 13px;
@@ -684,14 +691,7 @@ a {
   row-gap: 1.5rem;
 }
 
-@media (min-width: 1200px) {
-  #projects .project-wrapper .project {
-    -ms-flex-preferred-size: 500px;
-        flex-basis: 500px;
-  }
-}
-
-@media (min-width: 1700px) {
+@media (min-width: 1400px) {
   #projects .project-wrapper .project {
     -ms-flex-preferred-size: 300px;
         flex-basis: 300px;
@@ -856,6 +856,13 @@ footer p {
   border-radius: .5em .5em 0em 0em;
 }
 
+@media (min-height: 750px) {
+  .main-project .project-wrapper {
+    font-size: .8em;
+    height: auto;
+  }
+}
+
 @media (max-width: 1280px) {
   .main-project .project-wrapper {
     height: 30em;
@@ -957,6 +964,12 @@ footer p {
           transform: scale(1.05);
 }
 
+@media (min-height: 750px) {
+  .main-project .project-wrapper .project-images .project-image-1 {
+    height: 12em;
+  }
+}
+
 .main-project .project-wrapper .project-images .project-image-2 {
   margin: 1em;
   -webkit-transition: .5s ease transform;
@@ -966,6 +979,12 @@ footer p {
 .main-project .project-wrapper .project-images .project-image-2:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
+}
+
+@media (min-height: 750px) {
+  .main-project .project-wrapper .project-images .project-image-2 {
+    height: 12em;
+  }
 }
 
 .main-project .project-wrapper .project-images .icons {

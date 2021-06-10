@@ -355,6 +355,11 @@ a {
     border-radius: .5em .5em 0 0;
     display: flex;
 
+    @media (max-width: 1600px) {
+      font-size: 18px;
+      height: 27em;
+    }
+
     @media (max-width: 992px) {
       font-size: 13px;
     }
@@ -495,11 +500,7 @@ a {
       transition: .25s ease-out transform;
       row-gap: 1.5rem;
 
-      @media (min-width: 1200px) {
-        flex-basis: 500px;
-      }
-
-      @media (min-width: 1700px) {
+      @media (min-width: 1400px) {
         flex-basis: 300px;
       }
 
@@ -617,6 +618,11 @@ footer {
     background: $blackOpacity;
     border-radius: .5em .5em 0em 0em;
 
+    @media (min-height: 750px) {
+      font-size: .8em;
+      height: auto;
+    }
+
     @media (max-width: 1280px) {
       height: 30em;
     }
@@ -692,6 +698,10 @@ footer {
         &:hover {
           transform: scale(1.05);
         }
+
+        @media (min-height: 750px) {
+          height: 12em;
+        }
       }
 
       .project-image-2 {
@@ -700,6 +710,10 @@ footer {
 
         &:hover {
           transform: scale(1.05);
+        }
+
+        @media (min-height: 750px) {
+          height: 12em;
         }
       }
 
