@@ -623,6 +623,11 @@ footer {
       height: auto;
     }
 
+    @media (min-width: 1920px) {
+      height: 32em;
+      font-size: 1em;
+    }
+
     @media (max-width: 1280px) {
       height: 30em;
     }

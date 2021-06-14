@@ -863,6 +863,13 @@ footer p {
   }
 }
 
+@media (min-width: 1920px) {
+  .main-project .project-wrapper {
+    height: 32em;
+    font-size: 1em;
+  }
+}
+
 @media (max-width: 1280px) {
   .main-project .project-wrapper {
     height: 30em;
