@@ -132,14 +132,14 @@ a {
 
     a {
       font-size: $sizeMenu;
-      color: $white !important;
+      color: $white  !important;
 
       @media (min-width: 2000px) {
         font-size: 1.4em;
       }
 
       &:hover {
-        color: $primaryColor !important;
+        color: $primaryColor  !important;
         transition: .5s ease color;
       }
     }
@@ -733,11 +733,11 @@ footer {
           text-align: center;
 
           .icon {
-            color: $primaryColor !important;
+            color: $primaryColor  !important;
             transition: .5s ease color;
 
             &:hover {
-              color: $white !important;
+              color: $white  !important;
             }
           }
         }

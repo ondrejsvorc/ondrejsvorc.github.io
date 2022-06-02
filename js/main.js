@@ -7,7 +7,7 @@ let tooltipList = tooltipTriggerList.map((tooltipTriggerEl) => {
 
 const section = document.querySelector("#about-me")
 
-if (section !== null){
+if (section !== null) {
   const about = document.querySelector(".nav-link.about").addEventListener('click', (e) => {
     e.preventDefault();
     section.scrollIntoView();
