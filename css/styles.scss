@@ -332,11 +332,11 @@ a {
   }
 
   @media (max-width: 440px) {
-    font-size: 11px;
+    font-size: 14px;
   }
 
   @media (max-width: 360px) {
-    font-size: 8px;
+    font-size: 9px;
   }
 }
 
@@ -402,7 +402,6 @@ a {
       justify-content: center;
       align-content: center;
       text-align: justify;
-      row-gap: 2em;
       padding: 2em;
 
       @media (min-width: 2000px) {
@@ -411,19 +410,27 @@ a {
 
       @media (max-width: 1200px) {
         width: 100%;
-        font-size: 18px;
+        height: fit-content;
+        padding: 1.5em;
+        font-size: 24px;
       }
 
       @media (max-width: 772px) {
-        font-size: 14px;
+        height: fit-content;
+        padding: 1.5em;
+        font-size: 18px;
       }
 
       @media (max-width: 440px) {
-        font-size: 12px;
+        height: fit-content;
+        padding: 1.5em;
+        font-size: 18px;
       }
 
       @media (max-width: 360px) {
-        font-size: 10px;
+        height: fit-content;
+        padding: 1.5em;
+        font-size: 14px;
       }
 
       a {
@@ -448,19 +455,8 @@ a {
             height: 6.5em;
           }
 
-          @media (max-width: 540px) {
-            width: 5.5em;
-            height: 5.5em;
-          }
-
-          @media (max-width: 440px) {
-            width: 4.5em;
-            height: 4.5em;
-          }
-
-          @media (max-width: 360px) {
-            width: 4em;
-            height: 4em;
+          @media (max-width: 990px) {
+            display: none;
           }
 
           &:hover {
