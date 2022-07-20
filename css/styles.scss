@@ -500,9 +500,26 @@ a {
         flex-basis: 300px;
       }
 
+      @media (max-width: 1000px) {
+        font-size: 1.1em;
+      }
+
+      @media (max-width: 750px) {
+        font-size: 1.5em;
+      }
+
+      @media (max-width: 500px) {
+        font-size: 1.1em;
+      }
+
       @media (max-height: 720px) {
         flex-basis: 200px;
+        font-size: 1.1em;
+      }
+
+      @media (max-height: 480px) {
         font-size: .9em;
+        row-gap: 0;
       }
 
       &:hover {
@@ -535,6 +552,16 @@ a {
         min-height: 70px;
         padding: 0 .5em;
         height: 80px;
+
+        @media (max-height: 480px) {
+          font-size: .9em;
+          height: fit-content;
+          padding-bottom: 0;
+
+          p {
+            margin-bottom: 0;
+          }
+        }
       }
 
       .project-buttons {
@@ -578,12 +605,11 @@ footer {
     }
 
     @media (max-width: 440px) {
-      font-size: .7em;
-
+      font-size: .9em;
     }
 
     @media (max-width: 360px) {
-      font-size: .6em;
+      font-size: .8em;
     }
   }
 }
