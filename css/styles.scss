@@ -381,7 +381,6 @@ a {
       width: 10%;
       height: 100%;
       border-radius: .5em 0 0 0;
-      // background: url(/images/Other/me.jpg);
       background-color: $primaryColorDarker;
       opacity: .9;
       background-size: cover;
@@ -402,7 +401,6 @@ a {
       background-color: rgba(0, 0, 0, .6);
       display: flex;
       flex-wrap: wrap;
-      // justify-content: center;
       text-align: justify;
       padding: 4em;
 
@@ -462,7 +460,7 @@ a {
           }
 
           &:hover {
-            transform: scale(1.1);
+            transform: scale(1.04);
           }
         }
       }
