@@ -3,6 +3,7 @@ body {
   background: rgb(11, 12, 16);
   font-size: 20px;
   font-family: "Open Sans", sans-serif;
+  scroll-behavior: smooth;
 }
 
 section {

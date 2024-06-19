@@ -14,8 +14,6 @@ if (section !== null) {
   });
 }
 
-const footerParagraph = document.querySelector("footer p");
-
 document.querySelector("main").style.visibility = "hidden";
 document.querySelector("#navBar").style.visibility = "hidden";
 document.querySelector(".loader-container").style.visibility = "visible";
@@ -26,21 +24,5 @@ window.addEventListener("load", (event) => {
   document.querySelector("#navBar").style.visibility = "visible";
 });
 
-window.addEventListener("scroll", function () {
-  let revealElements = document.querySelectorAll(".reveal");
-
-  for (let i = 0; i < revealElements.length; i++) {
-    let revealPoint = 100;
-
-    if (
-      revealElements[i].getBoundingClientRect().top <
-      window.innerHeight - revealPoint
-    ) {
-      revealElements[i].classList.add("active");
-    } else {
-      revealElements[i].classList.remove("active");
-    }
-  }
-});
-
+const footerParagraph = document.querySelector("footer p");
 footerParagraph.innerHTML += " " + new Date().getFullYear();
