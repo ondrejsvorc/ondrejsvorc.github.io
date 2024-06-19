@@ -60,12 +60,6 @@ a {
     transform: rotate(360deg);
   }
 }
-.reveal {
-  transform: translateY(150px);
-  opacity: 0;
-  transition: 0.75s ease all;
-}
-
 .active {
   transform: translateY(0px);
   opacity: 1;
